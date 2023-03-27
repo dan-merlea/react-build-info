@@ -8,7 +8,7 @@ var appName = 'React Build Info';
 var blankStr = '';
 var buildDate = new Date(Date.now());
 var inputFile = path.join(process.cwd(), 'package.json');
-var outputFolder = path.join(process.cwd(), 'src/');
+var outputFolder = path.join(process.cwd(), 'packages/client/src/');
 var outputFile = path.join(outputFolder, 'buildInfo.js');
 function outputHighlighted(highlight, msg) {
     console.log(chalk.yellow(highlight + ": ") + msg);
